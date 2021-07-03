@@ -127,7 +127,7 @@ const ConverterPage: React.FunctionComponent = () => {
             <Tooltip title="Kopiraj tekst">
                 <CopyToClipboard text={arebicaText}>
                 <IconButton color="default" style={{width: "40px", fontSize: "14px", float: "right"}} >
-                    <img src="../assets/icon_copy.jpg" width="40" height="40" alt="Kopiraj tekst" />
+                    <img src="./assets/icon_copy.jpg" width="40" height="40" alt="Kopiraj tekst" />
                 </IconButton>
                 </CopyToClipboard>
             </Tooltip>

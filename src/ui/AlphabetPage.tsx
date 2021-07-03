@@ -7,6 +7,8 @@ const AlphabetPageRoot = styled.div`
     flex-direction: column;
     height: calc(100vh - 100px);
     width: 80%;
+    padding-top: 10px;
+    margin-top: 60px;
     padding-bottom: 0;
     max-width: 1000px;
     margin-left: auto;
