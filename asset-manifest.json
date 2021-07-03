@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/arebica-converter/static/css/main.aa831ab2.chunk.css",
+    "main.js": "/arebica-converter/static/js/main.87b5ff33.chunk.js",
+    "main.js.map": "/arebica-converter/static/js/main.87b5ff33.chunk.js.map",
+    "runtime-main.js": "/arebica-converter/static/js/runtime-main.5bbc3a1f.js",
+    "runtime-main.js.map": "/arebica-converter/static/js/runtime-main.5bbc3a1f.js.map",
+    "static/js/2.bb0bc60b.chunk.js": "/arebica-converter/static/js/2.bb0bc60b.chunk.js",
+    "static/js/2.bb0bc60b.chunk.js.map": "/arebica-converter/static/js/2.bb0bc60b.chunk.js.map",
+    "static/js/3.0027d97b.chunk.js": "/arebica-converter/static/js/3.0027d97b.chunk.js",
+    "static/js/3.0027d97b.chunk.js.map": "/arebica-converter/static/js/3.0027d97b.chunk.js.map",
+    "index.html": "/arebica-converter/index.html",
+    "static/css/main.aa831ab2.chunk.css.map": "/arebica-converter/static/css/main.aa831ab2.chunk.css.map",
+    "static/js/2.bb0bc60b.chunk.js.LICENSE.txt": "/arebica-converter/static/js/2.bb0bc60b.chunk.js.LICENSE.txt",
+    "static/media/msuighur.5a5d0115.ttf": "/arebica-converter/static/media/msuighur.5a5d0115.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5bbc3a1f.js",
+    "static/js/2.bb0bc60b.chunk.js",
+    "static/css/main.aa831ab2.chunk.css",
+    "static/js/main.87b5ff33.chunk.js"
+  ]
+}
