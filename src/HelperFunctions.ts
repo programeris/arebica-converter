@@ -1,5 +1,12 @@
-const bosnianLatinLetters: string = "ABCČĆDĐEFGHIJKLMNOPRSŠTUVZŽQXYW"
-const bosnianArebicaLetters: string = "ابڄچݘدجڠەفغحئيکلڵمنۉپرسشتۆوزژ"
+const bosnianArebicaLetters: string = "ابڄچݘدجڠەفغحئيقلڵمنۉپرسشتۆوزژ"
+
+function isInNewLine(character: string) {
+    return character === "\n"
+}
+
+function checkIfStartingVersionOfLetter(index: number, character: string){
+    return index === 0 || (character && character === " ") || isInNewLine(character)
+}
 
 export function convertLatinToArebica(latinText: string): string {
     var arebicaText: string = ''
@@ -44,7 +51,7 @@ export function convertLatinToArebica(latinText: string): string {
                 {
                     case 'a':
                     case 'A': { 
-                        if(i === 0 || (latinText[i - 1] && latinText[i - 1] === " ")){
+                        if(checkIfStartingVersionOfLetter(i, latinText[i - 1])){
                             arebicaText += 'آ'
                             break
                         }
@@ -64,7 +71,7 @@ export function convertLatinToArebica(latinText: string): string {
                     case 'Đ': arebicaText += 'ڠ'; break;
                     case 'e':
                     case 'E': { 
-                        if(i === 0 || (latinText[i - 1] && latinText[i - 1] === " ")){
+                        if(checkIfStartingVersionOfLetter(i, latinText[i - 1])){
                             arebicaText += 'ئە'
                             break
                         }
@@ -78,7 +85,7 @@ export function convertLatinToArebica(latinText: string): string {
                     case 'H': arebicaText += 'ح'; break;
                     case 'i': 
                     case 'I': { 
-                        if(i === 0 || (latinText[i - 1] && latinText[i - 1] === " ")){
+                        if(checkIfStartingVersionOfLetter(i, latinText[i - 1])){
                             arebicaText += 'ائ'
                             break
                         }
@@ -87,7 +94,7 @@ export function convertLatinToArebica(latinText: string): string {
                     case 'j':
                     case 'J': arebicaText += 'ي'; break;
                     case 'k': 
-                    case 'K': arebicaText += 'ک'; break;
+                    case 'K': arebicaText += 'ق'; break;
                     case 'l': 
                     case 'L': arebicaText += 'ل'; break;
                     case 'm':
@@ -163,7 +170,7 @@ export function convertCyrillicToArebica(cyrillicText: string): string {
             {
                 case 'а':
                 case 'А': { 
-                    if(i === 0 || (cyrillicText[i - 1] && cyrillicText[i - 1] === " ")){
+                    if(checkIfStartingVersionOfLetter(i, cyrillicText[i - 1])){
                         arebicaText += 'آ'
                         break
                     }
@@ -185,7 +192,7 @@ export function convertCyrillicToArebica(cyrillicText: string): string {
                 case 'Ђ': arebicaText += 'ڠ'; break;
                 case 'е':
                 case 'Е': { 
-                    if(i === 0 || (cyrillicText[i - 1] && cyrillicText[i - 1] === " ")){
+                    if(checkIfStartingVersionOfLetter(i, cyrillicText[i - 1])){
                         arebicaText += 'ئە'
                         break
                         }
@@ -199,7 +206,7 @@ export function convertCyrillicToArebica(cyrillicText: string): string {
                 case 'Х': arebicaText += 'ح'; break;
                 case 'и': 
                 case 'И': { 
-                    if(i === 0 || (cyrillicText[i - 1] && cyrillicText[i - 1] === " ")){
+                    if(checkIfStartingVersionOfLetter(i, cyrillicText[i - 1])){
                         arebicaText += 'ائ'
                         break
                     }
@@ -208,7 +215,7 @@ export function convertCyrillicToArebica(cyrillicText: string): string {
                 case 'ј':
                 case 'Ј': arebicaText += 'ي'; break;
                 case 'к': 
-                case 'К': arebicaText += 'ک'; break;
+                case 'К': arebicaText += 'ق'; break;
                 case 'л': 
                 case 'Л': arebicaText += 'ل'; break;
                 case 'љ': 
@@ -257,13 +264,11 @@ export function convertCyrillicToArebica(cyrillicText: string): string {
                     arebicaText += letter;
                     break;
                 }
-                break;
         }
 
     for (i=0; i < arebicaText.length; i++){
-        if(i === cyrillicText.length - 1 || (cyrillicText[i + 1] && !(bosnianLatinLetters.includes(cyrillicText[i + 1])))){
-            arebicaText.replace(arebicaText[i], 'ںٛ')
-            i++;
+        if(arebicaText[i] === "ٮ" && (i === arebicaText.length - 2 || (arebicaText[i + 2] && !(bosnianArebicaLetters.includes(arebicaText[i + 2]))))){
+            arebicaText = arebicaText.replace(arebicaText[i], 'ں')
         }
     }
 
@@ -290,8 +295,8 @@ const wordPool: WordPair[] = [
         right: "ﷲ"
     },
     {
-        wrong: "ئٮٛەکڄئيا",
-        right: "ئنيەکڄئيا"
+        wrong: "ئٮٛەقڄئيا",
+        right: "ئنيەقڄئيا"
     },
     {
         wrong: "ناجئو",
@@ -314,7 +319,7 @@ const wordPool: WordPair[] = [
         right: "حانّا"
     },
     {
-        wrong: "کۆر'ان",
+        wrong: "قۆر'ان",
         right: "قرآن"
     },
 ]

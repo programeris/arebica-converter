@@ -37,6 +37,7 @@ const Label = styled.div`
     font-size: 18px;
     font-weight: bold;
     height: 32px;
+    width: 80px;
     font-family: 'Calibri';
 `
 
@@ -63,21 +64,24 @@ const ConverterPage: React.FunctionComponent = () => {
 
     return <ConverterPageRoot>
          <form noValidate autoComplete="off">
-        <TextFieldContainer>
-            <Label>
-                {
-                    false && 
+        <TextFieldContainer> 
                     <Select
                     labelId="demo-simple-select-helper-label"
                     id="demo-simple-select-helper"
                     value={currentScript}
                     onChange={(e: any) => setCurrentScript(e.target.value)}>
-                    <MenuItem value={"lat"}>Latinica</MenuItem>
-                    <MenuItem value={"cyr"}>Ćirilica</MenuItem>
+                    <MenuItem value={"lat"}>
+                        <Label>
+                            Latinica
+                        </Label>
+                    </MenuItem>
+                    
+                    <MenuItem value={"cyr"}>
+                        <Label>
+                            Ćirilica
+                        </Label>
+                    </MenuItem>
                 </Select>
-                }
-                Latinica
-            </Label>
             {
                 currentScript === "lat" &&
                 <TextField
