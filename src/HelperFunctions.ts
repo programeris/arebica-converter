@@ -72,7 +72,7 @@ export function convertLatinToArebica(latinText: string): string {
                     case 'e':
                     case 'E': { 
                         if(checkIfStartingVersionOfLetter(i, latinText[i - 1])){
-                            arebicaText += 'یە'
+                            arebicaText += 'ئە'
                             break
                         }
                         arebicaText += 'ە'; break;
@@ -193,7 +193,7 @@ export function convertCyrillicToArebica(cyrillicText: string): string {
                 case 'е':
                 case 'Е': { 
                     if(checkIfStartingVersionOfLetter(i, cyrillicText[i - 1])){
-                        arebicaText += 'یە'
+                        arebicaText += 'ئە'
                         break
                         }
                     arebicaText += 'ە'; break;
