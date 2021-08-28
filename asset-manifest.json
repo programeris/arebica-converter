@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/arebica-converter/static/css/main.aa831ab2.chunk.css",
-    "main.js": "/arebica-converter/static/js/main.852c5de6.chunk.js",
-    "main.js.map": "/arebica-converter/static/js/main.852c5de6.chunk.js.map",
+    "main.css": "/arebica-converter/static/css/main.736e38bb.chunk.css",
+    "main.js": "/arebica-converter/static/js/main.7e6ad6b3.chunk.js",
+    "main.js.map": "/arebica-converter/static/js/main.7e6ad6b3.chunk.js.map",
     "runtime-main.js": "/arebica-converter/static/js/runtime-main.5da5d911.js",
     "runtime-main.js.map": "/arebica-converter/static/js/runtime-main.5da5d911.js.map",
     "static/js/2.5049d899.chunk.js": "/arebica-converter/static/js/2.5049d899.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.5d68cfb3.chunk.js": "/arebica-converter/static/js/3.5d68cfb3.chunk.js",
     "static/js/3.5d68cfb3.chunk.js.map": "/arebica-converter/static/js/3.5d68cfb3.chunk.js.map",
     "index.html": "/arebica-converter/index.html",
-    "static/css/main.aa831ab2.chunk.css.map": "/arebica-converter/static/css/main.aa831ab2.chunk.css.map",
+    "static/css/main.736e38bb.chunk.css.map": "/arebica-converter/static/css/main.736e38bb.chunk.css.map",
     "static/js/2.5049d899.chunk.js.LICENSE.txt": "/arebica-converter/static/js/2.5049d899.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.5da5d911.js",
     "static/js/2.5049d899.chunk.js",
-    "static/css/main.aa831ab2.chunk.css",
-    "static/js/main.852c5de6.chunk.js"
+    "static/css/main.736e38bb.chunk.css",
+    "static/js/main.7e6ad6b3.chunk.js"
   ]
 }
