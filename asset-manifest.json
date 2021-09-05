@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/arebica-converter/static/css/main.9d477020.chunk.css",
-    "main.js": "/arebica-converter/static/js/main.d8132721.chunk.js",
-    "main.js.map": "/arebica-converter/static/js/main.d8132721.chunk.js.map",
+    "main.js": "/arebica-converter/static/js/main.137d3cc4.chunk.js",
+    "main.js.map": "/arebica-converter/static/js/main.137d3cc4.chunk.js.map",
     "runtime-main.js": "/arebica-converter/static/js/runtime-main.5da5d911.js",
     "runtime-main.js.map": "/arebica-converter/static/js/runtime-main.5da5d911.js.map",
     "static/js/2.63155766.chunk.js": "/arebica-converter/static/js/2.63155766.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.5da5d911.js",
     "static/js/2.63155766.chunk.js",
     "static/css/main.9d477020.chunk.css",
-    "static/js/main.d8132721.chunk.js"
+    "static/js/main.137d3cc4.chunk.js"
   ]
 }
