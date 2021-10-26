@@ -1,10 +1,6 @@
-import React, { useState } from "react"
+import React from "react"
 import ConverterPage from "./ConverterPage"
-import Header from "./Header"
-import Footer from "./Footer"
 import styled from "styled-components"
-import InfoPage from "./InfoPage"
-import AlphabetPage from "./AlphabetPage"
 
 const ContentRoot = styled.div`
     display: flex;
@@ -13,24 +9,8 @@ const ContentRoot = styled.div`
 `
 
 const Content: React.FunctionComponent = () => {
-    const [showInfo, setShowInfo] = useState<boolean>(false)
-    const [showAlphabet, setShowAlphabet] = useState<boolean>(false)
-
     return <ContentRoot>
-        <Header showInfo={showInfo} setShowInfo={setShowInfo} showAlphabet={showAlphabet} setShowAlphabet={setShowAlphabet} />
-        {
-            showInfo &&
-            <InfoPage />
-        }
-        {
-            !showInfo && !showAlphabet &&
-            <ConverterPage />
-        }
-        {
-            showAlphabet &&
-            <AlphabetPage />
-        }
-        <Footer />
+        <ConverterPage />
     </ContentRoot>
 }
 

@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+.menu-label {
+  color: #000 !important;
+}
+
+.MuiTextField-root {
+  background: #fff;
+  border-radius: 4px;
+}
+
+.MuiSelect-icon {
+  color: #fff;
+}
+
+.MuiSvgIcon-root {
+  fill: #fff !important;
+}
