@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/arebica-converter/static/css/main.c7de77af.chunk.css",
-    "main.js": "/arebica-converter/static/js/main.19b8919e.chunk.js",
-    "main.js.map": "/arebica-converter/static/js/main.19b8919e.chunk.js.map",
+    "main.css": "/arebica-converter/static/css/main.5fc9b345.chunk.css",
+    "main.js": "/arebica-converter/static/js/main.556695b4.chunk.js",
+    "main.js.map": "/arebica-converter/static/js/main.556695b4.chunk.js.map",
     "runtime-main.js": "/arebica-converter/static/js/runtime-main.5da5d911.js",
     "runtime-main.js.map": "/arebica-converter/static/js/runtime-main.5da5d911.js.map",
     "static/js/2.63155766.chunk.js": "/arebica-converter/static/js/2.63155766.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.5d68cfb3.chunk.js": "/arebica-converter/static/js/3.5d68cfb3.chunk.js",
     "static/js/3.5d68cfb3.chunk.js.map": "/arebica-converter/static/js/3.5d68cfb3.chunk.js.map",
     "index.html": "/arebica-converter/index.html",
-    "static/css/main.c7de77af.chunk.css.map": "/arebica-converter/static/css/main.c7de77af.chunk.css.map",
+    "static/css/main.5fc9b345.chunk.css.map": "/arebica-converter/static/css/main.5fc9b345.chunk.css.map",
     "static/js/2.63155766.chunk.js.LICENSE.txt": "/arebica-converter/static/js/2.63155766.chunk.js.LICENSE.txt",
     "static/media/index.css": "/arebica-converter/static/media/unifont-14.0.01.c40898a5.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.5da5d911.js",
     "static/js/2.63155766.chunk.js",
-    "static/css/main.c7de77af.chunk.css",
-    "static/js/main.19b8919e.chunk.js"
+    "static/css/main.5fc9b345.chunk.css",
+    "static/js/main.556695b4.chunk.js"
   ]
 }
