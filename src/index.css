@@ -10,6 +10,6 @@ code {
 }
 
 @font-face {
-  font-family: 'Unifont';
-  src: local('Unifont'), url(./fonts/unifont-14.0.01.ttf) format('truetype');
+  font-family: 'ScheherezadeNew-Regular';
+  src: local('ScheherezadeNew-Regular'), url(./fonts/ScheherazadeNew-Regular.ttf) format('truetype');
 }

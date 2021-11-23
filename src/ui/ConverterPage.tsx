@@ -143,7 +143,7 @@ const ConverterPage: React.FunctionComponent = () => {
                     variant="outlined"
                     rows={4}
                     value={arebicaText}
-                    inputProps={{ readOnly: true, style: { fontSize: 32, background: "#fff", lineHeight: 1.5, fontFamily: "Microsoft Uighur" } }}
+                    inputProps={{ readOnly: true, style: { fontSize: 28, background: "#fff", lineHeight: 1.5, fontFamily: "ScheherezadeNew-Regular" } }}
                     size="medium"
                 />
 

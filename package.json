@@ -1,7 +1,7 @@
 {
   "homepage": "http://programeris.github.io/arebica-converter",
   "name": "arebica-converter",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.4",
