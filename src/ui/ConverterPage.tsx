@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react"
 import styled from "styled-components"
 import { IconButton, MenuItem, Select, TextField, Tooltip } from "@material-ui/core"
-import { convertCyrillicToArebica, convertLatinToArebica } from "../HelperFunctions"
 import { CopyToClipboard } from 'react-copy-to-clipboard';
+import { convertLatinToArebica, convertCyrillicToArebica } from "arebica-js";
 
 const ConverterPageRoot = styled.div`
     display: flex;
